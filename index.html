@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./pics/Calculator-icon.png" type="image/x-icon">
+    <title>Calculator</title>
+</head>
+
+<body class="h-screen bg-slate-600 flex justify-center items-center font-sans">
+    <div class="bg-slate-700 w-72 h-3/4 rounded-2xl flex justify-center m-auto flex-col shadow-2xl">
+        <div class="h-20 bg-slate-800 w-64 mt-4 relative rounded-md m-auto flex justify-center items-center text-center">
+            <p id="input" class="text-white font-sans text-5xl text-center absolute right-3"></p>
+        </div>
+        <div class="h-64 mb-auto flex justify-center items-center flex-col gap-3">
+            <div class="w-64 h-14 flex justify-between items-center m-auto">
+                <button onclick="toClear()"
+                    class="operation transition-all hover:bg-slate-500  bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
+                    aria-label="All Clear">AC</button>
+                <button onclick="toDelete()"
+                    class="operation transition-all hover:bg-slate-500 bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
+                    aria-label="Delete">DEL</button>
+                <button onclick="operations('%')" class=" transition-all hover:bg-slate-500 operation bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
+                    aria-label="Percentage">%</button>
+                <button onclick="operations('/')" class=" transition-all hover:bg-yellow-500 operation bg-yellow-400 w-12 h-12 rounded-full text-white text-2xl font-semibold"
+                    aria-label="Divide">/</button>
+            </div>
+            <div class="w-64 h-14 flex justify-between items-center m-auto">
+                <button onclick="operations('7')" class="number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold transition-all hover:bg-slate-500"
+                    aria-label="Seven">7</button>
+                <button onclick="operations('8')" class=" transition-all hover:bg-slate-500 number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
+                    aria-label="Eight">8</button>
+                <button onclick="operations('9')" class=" transition-all hover:bg-slate-500 number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
+                    aria-label="Nine">9</button>
+                <button onclick="operations('*')" class=" transition-all hover:bg-yellow-500 operation bg-yellow-400 w-12 h-12 rounded-full text-white text-3xl font-semibold"
+                    aria-label="Multiply">x</button>
+            </div>
+            <div class="w-64 h-14 flex justify-between items-center m-auto">
+                <button onclick="operations('4')" class=" transition-all hover:bg-slate-500 number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
+                    aria-label="Four">4</button>
+                <button onclick="operations('5')" class="transition-all hover:bg-slate-500 number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
+                    aria-label="Five">5</button>
+                <button onclick="operations('6')" class="transition-all hover:bg-slate-500 number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
+                    aria-label="Six">6</button>
+                <button onclick="operations('-')" class=" transition-all hover:bg-yellow-500 operation bg-yellow-400 w-12 h-12 rounded-full text-white text-4xl font-semibold"
+                    aria-label="Subtract">-</button>
+            </div>
+            <div class="w-64 h-14 flex justify-between items-center m-auto">
+                <button onclick="operations('1')" class="transition-all hover:bg-slate-500 number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
+                    aria-label="One">1</button>
+                <button onclick="operations('2')" class=" transition-all hover:bg-slate-500 number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
+                    aria-label="Two">2</button>
+                <button onclick="operations('3')" class="transition-all hover:bg-slate-500 number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
+                    aria-label="Three">3</button>
+                <button onclick="operations('+')" class=" transition-all hover:bg-yellow-500 operation bg-yellow-400 w-12 h-12 rounded-full text-white text-3xl font-semibold"
+                    aria-label="Add">+</button>
+            </div>
+            <div class="w-64 h-14 flex justify-between items-center m-auto">
+                <button onclick="operations('0')" class="transition-all hover:bg-slate-500 number bg-slate-400 w-28 h-12 rounded-full text-black text-xl font-semibold"
+                    aria-label="Zero">0</button>
+                <button onclick="operations('.')" class="transition-all hover:bg-slate-500 number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
+                    aria-label="Decimal Point">.</button>
+                <button onclick="toCalculate()"
+                    class="operation transition-all hover:bg-yellow-500 bg-yellow-400 w-12 h-12 rounded-full text-white text-3xl font-semibold"
+                    aria-label="Equals">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
