@@ -10,12 +10,12 @@
 </head>
 
 <body class="h-screen bg-slate-600 flex justify-center items-center font-sans">
-    <div class="bg-slate-700 w-72 h-3/4 rounded-2xl flex justify-center m-auto flex-col shadow-2xl">
-        <div class="h-20 bg-slate-800 w-64 mt-4 relative rounded-md m-auto flex justify-center items-center text-center">
+    <div class="bg-slate-700 w-full max-w-md h-3/4 rounded-2xl flex justify-center m-auto flex-col shadow-2xl p-4">
+        <div class="h-20 bg-slate-800 w-full mt-4 relative rounded-md m-auto flex justify-center items-center text-center">
             <p id="input" class="text-white font-sans text-5xl text-center absolute right-3"></p>
         </div>
         <div class="h-64 mb-auto flex justify-center items-center flex-col gap-3">
-            <div class="w-64 h-14 flex justify-between items-center m-auto">
+            <div class="w-full max-w-xs h-14 flex justify-between items-center m-auto">
                 <button onclick="toClear()"
                     class="operation transition-all hover:bg-slate-500  bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
                     aria-label="All Clear">AC</button>
@@ -27,7 +27,7 @@
                 <button onclick="operations('/')" class=" transition-all hover:bg-yellow-500 operation bg-yellow-400 w-12 h-12 rounded-full text-white text-2xl font-semibold"
                     aria-label="Divide">/</button>
             </div>
-            <div class="w-64 h-14 flex justify-between items-center m-auto">
+            <div class="w-full max-w-xs h-14 flex justify-between items-center m-auto">
                 <button onclick="operations('7')" class="number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold transition-all hover:bg-slate-500"
                     aria-label="Seven">7</button>
                 <button onclick="operations('8')" class=" transition-all hover:bg-slate-500 number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
@@ -37,7 +37,7 @@
                 <button onclick="operations('*')" class=" transition-all hover:bg-yellow-500 operation bg-yellow-400 w-12 h-12 rounded-full text-white text-3xl font-semibold"
                     aria-label="Multiply">x</button>
             </div>
-            <div class="w-64 h-14 flex justify-between items-center m-auto">
+            <div class="w-full max-w-xs h-14 flex justify-between items-center m-auto">
                 <button onclick="operations('4')" class=" transition-all hover:bg-slate-500 number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
                     aria-label="Four">4</button>
                 <button onclick="operations('5')" class="transition-all hover:bg-slate-500 number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
@@ -47,7 +47,7 @@
                 <button onclick="operations('-')" class=" transition-all hover:bg-yellow-500 operation bg-yellow-400 w-12 h-12 rounded-full text-white text-4xl font-semibold"
                     aria-label="Subtract">-</button>
             </div>
-            <div class="w-64 h-14 flex justify-between items-center m-auto">
+            <div class="w-full max-w-xs h-14 flex justify-between items-center m-auto">
                 <button onclick="operations('1')" class="transition-all hover:bg-slate-500 number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
                     aria-label="One">1</button>
                 <button onclick="operations('2')" class=" transition-all hover:bg-slate-500 number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
@@ -57,7 +57,7 @@
                 <button onclick="operations('+')" class=" transition-all hover:bg-yellow-500 operation bg-yellow-400 w-12 h-12 rounded-full text-white text-3xl font-semibold"
                     aria-label="Add">+</button>
             </div>
-            <div class="w-64 h-14 flex justify-between items-center m-auto">
+            <div class="w-full max-w-xs h-14 flex justify-between items-center m-auto">
                 <button onclick="operations('0')" class="transition-all hover:bg-slate-500 number bg-slate-400 w-28 h-12 rounded-full text-black text-xl font-semibold"
                     aria-label="Zero">0</button>
                 <button onclick="operations('.')" class="transition-all hover:bg-slate-500 number bg-slate-400 w-12 h-12 rounded-full text-black text-xl font-semibold"
